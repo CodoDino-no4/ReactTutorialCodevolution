@@ -20,15 +20,15 @@ class Counter extends Component {
         this.setState((prevState, props) => ({
             count: prevState.count +1
         }))
-        console.log(this.state.count)
     }
-
+    
     incrementFive() { 
         this.increment()
         this.increment()
         this.increment()
         this.increment()
         this.increment()
+        console.log(this.state.count)
         
     }
   render() {
