@@ -10,13 +10,15 @@ import EventBind from './Components/EventBind'
 import ParentComponent from './Components/ParentComponent';
 import UserGreeting from './Components/UserGreeting';
 import NamedList from './Components/NamedList';
+import Form from './Components/Form';
+import LifecycleA from './Components/LifecycleA';
 
 function App() {
   return (
     <div className="App">
       {/* <Greet name='Alice' heroName='jelly' /> */}
       {/* <Welcome name='poo' heroName='poo'/> */}
-      <NamedList />
+      <LifecycleA />
     </div>
   );
 }
