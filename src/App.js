@@ -22,6 +22,6 @@ function App() {
     </div>
   );
 }
-//UPTO: tutorial 21 https://www.youtube.com/watch?v=7Vo_VCcWupQ&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=21
+//UPTO: tutorial 24 https://www.youtube.com/watch?v=7Vo_VCcWupQ&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=24
 
 export default App;
