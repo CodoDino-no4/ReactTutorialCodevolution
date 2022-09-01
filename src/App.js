@@ -12,16 +12,18 @@ import UserGreeting from './Components/UserGreeting';
 import NamedList from './Components/NamedList';
 import Form from './Components/Form';
 import LifecycleA from './Components/LifecycleA';
+import FragmentDemo from './Components/FragmentDemo';
+import PureComp from './Components/PureComp';
+import RefsDemo from './Components/RefsDemo';
 
 function App() {
   return (
     <div className="App">
       {/* <Greet name='Alice' heroName='jelly' /> */}
       {/* <Welcome name='poo' heroName='poo'/> */}
-      <LifecycleA />
+      <RefsDemo />
     </div>
   );
 }
-//UPTO: tutorial 24 https://www.youtube.com/watch?v=7Vo_VCcWupQ&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=24
-
+//UPTO: tutorial 28 https://www.youtube.com/watch?v=FXa9mMTKOu8&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=28
 export default App;
