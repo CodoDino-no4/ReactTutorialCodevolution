@@ -15,15 +15,23 @@ import LifecycleA from './Components/LifecycleA';
 import FragmentDemo from './Components/FragmentDemo';
 import PureComp from './Components/PureComp';
 import RefsDemo from './Components/RefsDemo';
+import FocusInput from './Components/FocusInput';
+import PortalDemo from './Components/PortalDemo';
+import Hero from './Components/Hero';
+import ErrorBoundry from './Components/ErrorBoundry';
+import ClickCounter from './Components/ClickCounter';
+import HoverCounter from './Components/HoverCounter';
 
 function App() {
   return (
     <div className="App">
       {/* <Greet name='Alice' heroName='jelly' /> */}
       {/* <Welcome name='poo' heroName='poo'/> */}
-      <RefsDemo />
+      <ClickCounter name='ALice'/>
+      <HoverCounter/>
+
     </div>
   );
 }
-//UPTO: tutorial 28 https://www.youtube.com/watch?v=FXa9mMTKOu8&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=28
+//UPTO: tutorial 36 https://www.youtube.com/watch?v=NdapMDgNhtE&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=36
 export default App;
