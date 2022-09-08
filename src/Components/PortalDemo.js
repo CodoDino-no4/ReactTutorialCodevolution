@@ -5,8 +5,8 @@ function PortalDemo() {
   return ReactDOM.createPortal(
     <div>
       <h1>Portals Demo</h1>
-      </div>,
-      document.getElementById('portal-root')
+    </div>,
+    document.getElementById('portal-root')
   )
 }
 

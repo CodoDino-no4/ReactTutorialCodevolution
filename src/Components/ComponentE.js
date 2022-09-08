@@ -3,13 +3,13 @@ import ComponentF from './ComponentF'
 import UserContext from './UserContext'
 
 export class ComponentE extends Component {
-    static contextType = UserContext
+  static contextType = UserContext
   render() {
-      return (
-          <div>
-              Component E context {this.context}
-              <ComponentF />
-              </div>
+    return (
+      <div>
+        Component E context {this.context}
+        <ComponentF />
+      </div>
     )
   }
 }

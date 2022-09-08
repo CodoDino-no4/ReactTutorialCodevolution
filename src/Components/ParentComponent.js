@@ -3,23 +3,23 @@ import ChildComponent from './ChildComponent'
 
 export class ParentComponent extends Component {
 
-    constructor(props) {
-      super(props)
-    
-      this.state = {
-         parentName: 'Parent'
-        }
-        this.greetParent = this.greetParent.bind(this)
-    }
+  constructor(props) {
+    super(props)
 
-    greetParent(childName) { 
-        alert(`Hello ${this.state.parentName} from ${childName}`)
+    this.state = {
+      parentName: 'Parent'
     }
+    this.greetParent = this.greetParent.bind(this)
+  }
+
+  greetParent(childName) {
+    alert(`Hello ${this.state.parentName} from ${childName}`)
+  }
   render() {
     return (
-        <div>
-            <ChildComponent greetHandler={ this.greetParent } />
-        </div>
+      <div>
+        <ChildComponent greetHandler={this.greetParent} />
+      </div>
     )
   }
 }

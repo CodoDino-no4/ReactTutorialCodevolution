@@ -4,7 +4,7 @@ import ComponentE from './ComponentE'
 export class ComponentC extends Component {
   render() {
     return (
-      <ComponentE/>
+      <ComponentE />
     )
   }
 }

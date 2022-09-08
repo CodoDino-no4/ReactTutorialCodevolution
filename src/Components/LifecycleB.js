@@ -2,42 +2,42 @@ import React, { Component } from 'react'
 
 class LifecycleB extends Component {
 
-    constructor(props) {
-      super(props)
-    
-      this.state = {
-         name: 'Alice'
-        }
-        console.log('LifecycleB Constructor')
-    }
+  constructor(props) {
+    super(props)
 
-    static getDerivedStateFromProps(props, state) { 
-        console.log('LifecycleB getDerivedState')
-        return null
+    this.state = {
+      name: 'Alice'
     }
-
-    componentDidMount() { 
-        console.log('LifecycleB ComponentDidMount')
+    console.log('LifecycleB Constructor')
   }
-    shouldComponentUpdate() { 
+
+  static getDerivedStateFromProps(props, state) {
+    console.log('LifecycleB getDerivedState')
+    return null
+  }
+
+  componentDidMount() {
+    console.log('LifecycleB ComponentDidMount')
+  }
+  shouldComponentUpdate() {
     console.log('LifecycleB shouldComponentUpdate')
     return true;
   }
 
-  getSnapshotBeforeUpdate(prevProps, prevState) { 
+  getSnapshotBeforeUpdate(prevProps, prevState) {
     console.log('LifecycleB getSnapshotBeforeUpdate')
     return null;
   }
 
-  componentDidUpdate() { 
+  componentDidUpdate() {
     console.log('LifecycleB componentDidUpdate')
   }
 
-    render() {
-      console.log('LifecycleB render')
+  render() {
+    console.log('LifecycleB render')
     return (
-        <div>
-          Lifecycle B  
+      <div>
+        Lifecycle B
       </div>
     )
   }

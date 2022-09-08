@@ -1,10 +1,10 @@
 import React from 'react'
 
 function MemoComp() {
-    console.log('Rendering memo component')
+  console.log('Rendering memo component')
   return (
     <div>
-          {name}
+      {name}
     </div>
   )
 }

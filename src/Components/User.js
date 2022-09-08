@@ -4,7 +4,7 @@ export class User extends Component {
   render() {
     return (
       <div>
-            { this.props.render(true)}
+        {this.props.render(true)}
       </div>
     )
   }

@@ -3,51 +3,51 @@ import LifecycleB from './LifecycleB'
 
 class LifecycleA extends Component {
 
-    constructor(props) {
-      super(props)
-    
-      this.state = {
-         name: 'Alice'
-        }
-        console.log('LifecycleA Constructor')
-    }
+  constructor(props) {
+    super(props)
 
-    static getDerivedStateFromProps(props, state) { 
-        console.log('LifecycleA getDerivedState')
-        return null
+    this.state = {
+      name: 'Alice'
     }
-
-    componentDidMount() { 
-        console.log('LifecycleA ComponentDidMount')
+    console.log('LifecycleA Constructor')
   }
-  
-  shouldComponentUpdate() { 
+
+  static getDerivedStateFromProps(props, state) {
+    console.log('LifecycleA getDerivedState')
+    return null
+  }
+
+  componentDidMount() {
+    console.log('LifecycleA ComponentDidMount')
+  }
+
+  shouldComponentUpdate() {
     console.log('LifecycleA shouldComponentUpdate')
     return true;
   }
 
-  getSnapshotBeforeUpdate(prevProps, prevState) { 
+  getSnapshotBeforeUpdate(prevProps, prevState) {
     console.log('LifecycleA getSnapshotBeforeUpdate')
     return null;
   }
 
-  componentDidUpdate() { 
+  componentDidUpdate() {
     console.log('LifecycleA componentDidUpdate')
   }
 
-  changeState = () => { 
+  changeState = () => {
     this.setState({
       name: 'Alice'
     })
   }
 
-    render() {
-      console.log('LifecycleA render')
+  render() {
+    console.log('LifecycleA render')
     return (
-        <div>
-        Lifecycle A <br/>
-        <button onClick={ this.changeState}>Change state</button>
-            <LifecycleB />
+      <div>
+        Lifecycle A <br />
+        <button onClick={this.changeState}>Change state</button>
+        <LifecycleB />
       </div>
     )
   }
