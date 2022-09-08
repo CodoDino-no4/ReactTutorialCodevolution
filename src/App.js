@@ -21,17 +21,29 @@ import Hero from './Components/Hero';
 import ErrorBoundry from './Components/ErrorBoundry';
 import ClickCounter from './Components/ClickCounter';
 import HoverCounter from './Components/HoverCounter';
+import ClickCounterTwo from './Components/ClickCounterTwo';
+import HoverCounterTwo from './Components/HoverCounterTwo';
+import User from './Components/User';
+import ComponentC from './Components/ComponentC';
+import { UserProvider } from './Components/UserContext';
+import PostList from './Components/PostList';
+import PostForm from './Components/PostForm';
 
 function App() {
   return (
     <div className="App">
-      {/* <Greet name='Alice' heroName='jelly' /> */}
-      {/* <Welcome name='poo' heroName='poo'/> */}
-      <ClickCounter name='ALice'/>
-      <HoverCounter/>
+      {/* <ClickCounterTwo />
+      <HoverCounterTwo />
+      <User render={ (isLoggedIn) => isLoggedIn ? 'Alice' : 'Guest'} /> */}
+      {/* <Counter render={(count, incrementCount) => (<ClickCounterTwo count={count} incrementCount={incrementCount} /> )} /> */}
+      {/* <Counter render={(count, incrementCount) => (<HoverCounterTwo count={count} incrementCount={ incrementCount} /> )} /> */}
+      {/* <UserProvider value="Alice">
+        <ComponentC />
+      </UserProvider> */}
+      <PostForm/>
 
     </div>
   );
 }
-//UPTO: tutorial 36 https://www.youtube.com/watch?v=NdapMDgNhtE&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=36
+//UPTO: FINISHED!!! Time to learn about Hooks next.
 export default App;
